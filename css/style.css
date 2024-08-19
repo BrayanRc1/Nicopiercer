@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+p{
+    text-align: center;
+}
+
+.header{
+    background: rgb(30, 22, 30);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: cornflowerblue;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1000;
+}
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: antiquewhite;
+}
+.header .navbar a:hover{
+    color: rgb(238, 168, 82);
+    border-bottom: .1rem solid bisque;
+    padding-bottom: .5rem;
+}
+.header .iconos div{
+    color: antiquewhite;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+.header .iconos div:hover{
+    color: rgb(238, 168, 82);
+}
+.inicio{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:url(/images/imagen_principal2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.inicio .contenido{
+    max-width: 60rem;
+}
+
+.inicio .contenido h3{
+    margin-left: 30px;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: antiquewhite;
+}

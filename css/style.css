@@ -37,25 +37,30 @@ h3{
     border-bottom: cornflowerblue;
     background: rgb(34, 17, 34);
 }
+
 .header .navbar a{
     margin: 0 1rem;
     font-size: 2rem;
     color: antiquewhite;
 }
+
 .header .navbar a:hover{
     color: rgb(238, 168, 82);
     border-bottom: .1rem solid bisque;
     padding-bottom: .5rem;
 }
+
 .header .iconos div{
     color: antiquewhite;
     cursor: pointer;
     font-size: 2.5rem;
     margin-left: 2rem;
 }
+
 .header .iconos div:hover{
     color: rgb(238, 168, 82);
 }
+
 .inicio{
     min-height: 90vh;
     display: flex;
@@ -66,7 +71,7 @@ h3{
 }
 
 .inicio .contenido{
-    max-width: 60rem;
+    max-width:60rem;
 }
 
 .inicio .contenido h3{
@@ -89,9 +94,11 @@ h3{
     text-align: center;
     border: solid rgb(137, 106, 94);
 }
+
 .procedimientos .contenedor_principal .caja img{
     height: 20rem;
 }
+
 .precio{
     color: antiquewhite;
 }
@@ -107,35 +114,35 @@ h3{
 }
 
 .imagen_procedimientos:hover{
-    content: url(/images/joyeria/ASTM-2.jpg);
+    content: url(/nicopiercer/images/joyeria/ASTM-2.jpg);
 }
 
 .imagen_procedimientos1:hover{
-    content: url(/images/joyeria/ASTM-4.jpg);
+    content: url(/nicopiercer/images/joyeria/ASTM-4.jpg);
 }
 
 .imagen_procedimientos2:hover{
-    content: url(/images/joyeria/ASTM-6.jpg);
+    content: url(/nicopiercer/images/joyeria/ASTM-6.jpg);
 }
 
 .imagen_procedimientos3:hover{
-    content: url(/images/joyeria/ASTM-8.jpg);
+    content: url(/nicopiercer/images/joyeria/ASTM-8.jpg);
 }
 
 .imagen_procedimientos4:hover{
-    content: url(/images/joyeria/ASTM-10.jpg);
+    content: url(/nicopiercer/images/joyeria/ASTM-10.jpg);
 }
 
 .imagen_procedimientos5:hover{
-    content: url(/images/joyeria/ASTM-12.jpg);
+    content: url(/nicopiercer/images/joyeria/ASTM-12.jpg);
 }
 
 .imagen_procedimientos6:hover{
-    content: url(/images/joyeria/ASTM-14.jpg);
+    content: url(/nicopiercer/images/joyeria/ASTM-14.jpg);
 }
 
 .imagen_procedimientos7:hover{
-    content: url(/images/joyeria/ASTM-16.jpg);
+    content: url(/nicopiercer/images/joyeria/ASTM-16.jpg);
 }
 
 .footer{
@@ -182,7 +189,7 @@ h3{
     color: antiquewhite;
 }
 
-.email, .password{
+.name, .password, .email{
     width: 500px;
     height: 40px;
     padding: 10px;
@@ -191,5 +198,3 @@ h3{
     font-size: 16px;
     text-align: center;
 }
-
-/*estilos pagina crear cuenta*/

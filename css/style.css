@@ -6,6 +6,7 @@
 
 p{
     text-align: center;
+    color: antiquewhite;
 }
 
 body{
@@ -16,19 +17,21 @@ h1{
     text-align: center;
     margin-left: 30px;
     font-size: 3rem;
+    margin-right: 30px;
     text-transform: uppercase;
     color: antiquewhite;
+    background-color: #932b2b;
 }
 
-h3{
+h3, h2{
     color: antiquewhite;
 }
 
 .header{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 2rem 170px;
+    justify-content: center;
+    padding: 0.2rem 170px;
     top: 0;
     left: 0;
     right: 0;
@@ -62,7 +65,7 @@ h3{
 }
 
 .inicio{
-    min-height: 90vh;
+    min-height: 40vh;
     display: flex;
     align-items: center;
     background:url(/images/imagen_principal2.jpg) no-repeat;
@@ -71,13 +74,13 @@ h3{
 }
 
 .inicio .contenido{
-    max-width:60rem;
+    max-width: 60rem;
 }
 
 .inicio .contenido h3{
     margin-left: 80px;
     font-size: 4rem;
-    margin-top: 12rem;
+    margin-top: 10rem;
     text-transform: uppercase;
     color: antiquewhite;
 }
@@ -90,6 +93,7 @@ h3{
 
 .procedimientos .contenedor_principal .caja{
     margin-top: 1rem;
+    margin-right: 0.5rem;
     padding: 1rem;
     text-align: center;
     border: solid rgb(137, 106, 94);
@@ -114,37 +118,122 @@ h3{
 }
 
 .imagen_procedimientos:hover{
-    content: url(/nicopiercer/images/joyeria/ASTM-2.jpg);
+    content: url(/images/joyeria/ASTM-2.jpg);
 }
 
 .imagen_procedimientos1:hover{
-    content: url(/nicopiercer/images/joyeria/ASTM-4.jpg);
+    content: url(/images/joyeria/ASTM-4.jpg);
 }
 
 .imagen_procedimientos2:hover{
-    content: url(/nicopiercer/images/joyeria/ASTM-6.jpg);
+    content: url(/images/joyeria/ASTM-6.jpg);
 }
 
 .imagen_procedimientos3:hover{
-    content: url(/nicopiercer/images/joyeria/ASTM-8.jpg);
+    content: url(/images/joyeria/ASTM-8.jpg);
 }
 
 .imagen_procedimientos4:hover{
-    content: url(/nicopiercer/images/joyeria/ASTM-10.jpg);
+    content: url(/images/joyeria/ASTM-10.jpg);
 }
 
 .imagen_procedimientos5:hover{
-    content: url(/nicopiercer/images/joyeria/ASTM-12.jpg);
+    content: url(/images/joyeria/ASTM-12.jpg);
 }
 
 .imagen_procedimientos6:hover{
-    content: url(/nicopiercer/images/joyeria/ASTM-14.jpg);
+    content: url(/images/joyeria/ASTM-14.jpg);
 }
 
 .imagen_procedimientos7:hover{
-    content: url(/nicopiercer/images/joyeria/ASTM-16.jpg);
+    content: url(/images/joyeria/ASTM-16.jpg);
 }
 
+/* INICIO de Seccion portafolio y procedimientos*/
+.portafolio .contenedor_portafolio{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.portafolio .contenedor_portafolio .caja_portafolio{
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    border: solid rgb(137, 106, 94);
+}
+/*FIN de Seccion portafolio y procedimientos*/
+
+
+/*INICIO de Seccion blog*/
+.imagen_blog .contenedor_blog{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.imagen_blog .contenedor_blog .caja_blog{
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    border: solid rgb(137, 106, 94);
+}
+
+.imagen_blog .contenedor_blog .caja_blog img{
+    height: 30rem;
+}
+
+.imagen_blog1:hover{
+    content: url(/images/reseñas/reseña1.png);
+}
+
+.imagen_blog2:hover{
+    content: url(/images/reseñas/reseña3.png);
+}
+
+.imagen_blog3:hover{
+    content: url(/images/reseñas/reseña5.png);
+}
+
+.imagen_blog4:hover{
+    content: url(/images/reseñas/reseña7.png);
+}
+/*FIN de blog*/
+
+
+/*INICIO de seccion información*/
+.contenedor_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: start;
+    border: solid rgb(137, 106, 94);
+    margin-right: 0.5rem;
+    background-image: url(/images/imagen_principal3.jpg);
+}
+
+/* Estilos para las columnas */
+.columna_izquierda{
+    padding: 5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.columna_derecha{
+    font-size: 30px;
+    padding: 2rem;
+}
+
+.titulo_info, .h2_info{
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+/*FIN de seccion información*/
+
+
+/* INICIO de Seccion footer*/
 .footer{
     background: rgb(34, 17, 34);
     text-align: center;
@@ -175,8 +264,9 @@ h3{
 .footer span{
     color: #932b2b;
 }
+/* FIN de Seccion footer*/
 
-/*estilos pagina inicio de sesión*/
+/* INICIO de estilos pagina inicio de sesión*/
 
 .inicio_sesion{
     margin-top: 15rem;

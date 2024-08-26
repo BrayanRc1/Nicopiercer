@@ -4,6 +4,10 @@
     text-decoration: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 p{
     text-align: center;
     color: antiquewhite;
@@ -19,6 +23,7 @@ h1{
     font-size: 3rem;
     margin-right: 30px;
     text-transform: uppercase;
+    scroll-margin-top: 170px;
     color: antiquewhite;
     background-color: #932b2b;
 }
@@ -68,7 +73,7 @@ h3, h2{
     min-height: 40vh;
     display: flex;
     align-items: center;
-    background:url(/images/imagen_principal2.jpg) no-repeat;
+    background:url(/nicopiercer/images/imagen_principal2.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -118,35 +123,35 @@ h3, h2{
 }
 
 .imagen_procedimientos:hover{
-    content: url(/images/joyeria/ASTM-2.jpg);
+    content: url(/nicopiercer/images/joyeria/ASTM-2.jpg);
 }
 
 .imagen_procedimientos1:hover{
-    content: url(/images/joyeria/ASTM-4.jpg);
+    content: url(/nicopiercer/images/joyeria/ASTM-4.jpg);
 }
 
 .imagen_procedimientos2:hover{
-    content: url(/images/joyeria/ASTM-6.jpg);
+    content: url(/nicopiercer/images/joyeria/ASTM-6.jpg);
 }
 
 .imagen_procedimientos3:hover{
-    content: url(/images/joyeria/ASTM-8.jpg);
+    content: url(/nicopiercer/images/joyeria/ASTM-8.jpg);
 }
 
 .imagen_procedimientos4:hover{
-    content: url(/images/joyeria/ASTM-10.jpg);
+    content: url(/nicopiercer/images/joyeria/ASTM-10.jpg);
 }
 
 .imagen_procedimientos5:hover{
-    content: url(/images/joyeria/ASTM-12.jpg);
+    content: url(/nicopiercer/images/joyeria/ASTM-12.jpg);
 }
 
 .imagen_procedimientos6:hover{
-    content: url(/images/joyeria/ASTM-14.jpg);
+    content: url(/nicopiercer/images/joyeria/ASTM-14.jpg);
 }
 
 .imagen_procedimientos7:hover{
-    content: url(/images/joyeria/ASTM-16.jpg);
+    content: url(/nicopiercer/images/joyeria/ASTM-16.jpg);
 }
 
 /* INICIO de Seccion portafolio y procedimientos*/
@@ -164,6 +169,75 @@ h3, h2{
     border: solid rgb(137, 106, 94);
 }
 /*FIN de Seccion portafolio y procedimientos*/
+
+
+/*INICIO vistas preliminares de productos*/
+.vista_producto{
+    position: fixed;
+    top: 1rem; left: 0;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vista_producto .vista_previa{
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    background: #271d26;
+    position: relative;
+    margin: 2rem;
+    width: 25rem;
+    border: solid #aa7575;
+}
+
+.vista_producto .vista_previa.active{
+    display: inline-block;
+}
+
+.vista_producto .vista_previa img{
+    height: 15rem;
+}
+
+.vista_producto .vista_previa .fa-times{
+    position: absolute;
+    top: 1rem; right: 1.5rem;
+    cursor: pointer;
+    font-size: 2rem;
+    color: antiquewhite;
+}
+
+.vista_producto .vista_previa .botones{
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    margin-left: 6px;
+}
+
+.vista_producto .vista_previa .botones a{
+    flex: 1fr 1fr 16rem;
+    padding: .5rem;
+    font-size: 1.5rem;
+    color: antiquewhite;
+    border: .2rem solid #000000;
+}
+
+.comprar:hover{
+    background-color: #1c1515;
+}
+
+.agregar:hover{
+    background-color: #1c1515;
+}
+
+.precio{
+    font-size: 2rem;
+    color: #ffffff;
+}
+/*FIN vistas preliminares de productos*/
 
 
 /*INICIO de Seccion blog*/
@@ -186,19 +260,19 @@ h3, h2{
 }
 
 .imagen_blog1:hover{
-    content: url(/images/reseñas/reseña1.png);
+    content: url(/nicopiercer/images/reseñas/reseña1.png);
 }
 
 .imagen_blog2:hover{
-    content: url(/images/reseñas/reseña3.png);
+    content: url(/nicopiercer/images/reseñas/reseña3.png);
 }
 
 .imagen_blog3:hover{
-    content: url(/images/reseñas/reseña5.png);
+    content: url(/nicopiercer/images/reseñas/reseña5.png);
 }
 
 .imagen_blog4:hover{
-    content: url(/images/reseñas/reseña7.png);
+    content: url(/nicopiercer/images/reseñas/reseña7.png);
 }
 /*FIN de blog*/
 
@@ -211,7 +285,7 @@ h3, h2{
     align-items: start;
     border: solid rgb(137, 106, 94);
     margin-right: 0.5rem;
-    background-image: url(/images/imagen_principal3.jpg);
+    background-image: url(/nicopiercer/images/imagen_principal3.jpg);
 }
 
 /* Estilos para las columnas */

@@ -6,7 +6,7 @@ include 'conexion_be.php';
 
 $email = $_POST['email'];
 $password = $_POST['password'];
-//$password = hash('sha512', $password);
+$password = hash('sha512', $password);
 
 $validacion_login = mysqli_query($conexion, "SELECT * FROM usuarios WHERE email = '$email' and password = '$password'");
 

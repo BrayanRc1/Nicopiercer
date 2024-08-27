@@ -69,44 +69,44 @@ if(!isset($_SESSION ['usuario'])){
                 <div class="precio">$25.000</div>
                 <a href="" class="boton">Más detalles</a>
             </div>
-            <div class="caja">
+            <div class="caja" data-nombre="producto2">
                 <img class="imagen_procedimientos1" src="/nicopiercer/images/joyeria/ASTM-3.jpg" alt="ASTM-3">
                 <h3>Pieza ASTM-F136 de titanio</h3>
                 <div class="precio">$30.000</div>
                 <a href="" class="boton">Más detalles</a>
             </div>
-            <div class="caja">
+            <div class="caja" data-nombre="producto3">
                 <img class="imagen_procedimientos2" src="/nicopiercer/images/joyeria/ASTM-5.jpg" alt="ASTM-5">
                 <h3>Pieza ASTM-F136 de titanio</h3>
                 <div class="precio">$60.000</div>
                 <a href="" class="boton">Más detalles</a>
             </div>
-            <div class="caja">
+            <div class="caja" data-nombre="producto4">
                 <img class="imagen_procedimientos3" src="/nicopiercer/images/joyeria/ASTM-7.jpg" alt="ASTM-7">
                 <h3>Pieza ASTM-F136 de titanio</h3>
                 <div class="precio">$70.000</div>
                 <a href="" class="boton">Más detalles</a>
             </div>
-            <div class="caja">
-                <img class="imagen_procedimientos4" src="/nicopiercer/images/joyeria/ASTM-9.jpg" alt="ASTM-7">
+            <div class="caja" data-nombre="producto5">
+                <img class="imagen_procedimientos4" src="/nicopiercer/images/joyeria/ASTM-9.jpg" alt="ASTM-9">
                 <h3>Pieza ASTM-F136 de titanio</h3>
                 <div class="precio">$120.000</div>
                 <a href="" class="boton">Más detalles</a>
             </div>
-            <div class="caja">
-                <img class="imagen_procedimientos5" src="/nicopiercer/images/joyeria/ASTM-11.jpg" alt="ASTM-7">
+            <div class="caja" data-nombre="producto6">
+                <img class="imagen_procedimientos5" src="/nicopiercer/images/joyeria/ASTM-11.jpg" alt="ASTM-11">
                 <h3>Pieza ASTM-F136 de titanio</h3>
                 <div class="precio">$130.000</div>
                 <a href="" class="boton">Más detalles</a>
             </div>
-            <div class="caja">
-                <img class="imagen_procedimientos6" src="/nicopiercer/images/joyeria/ASTM-13.jpg" alt="ASTM-7">
+            <div class="caja" data-nombre="producto7">
+                <img class="imagen_procedimientos6" src="/nicopiercer/images/joyeria/ASTM-13.jpg" alt="ASTM-13">
                 <h3>Pieza ASTM-F136 de titanio</h3>
                 <div class="precio">$90.000</div>
                 <a href="" class="boton">Más detalles</a>
             </div>
-            <div class="caja">
-                <img class="imagen_procedimientos7" src="/nicopiercer/images/joyeria/ASTM-15.jpg" alt="ASTM-7">
+            <div class="caja" data-nombre="producto8">
+                <img class="imagen_procedimientos7" src="/nicopiercer/images/joyeria/ASTM-15.jpg" alt="ASTM-15">
                 <h3>Pieza ASTM-F136 de titanio</h3>
                 <div class="precio">$150.000</div>
                 <a href="" class="boton">Más detalles</a>
@@ -115,11 +115,88 @@ if(!isset($_SESSION ['usuario'])){
     </section><br><br><br><br>
 
     <div class="vista_producto">
-        <div class="vista_previa active" data-target="producto1">
+        <div class="vista_previa" data-target="producto1">
             <i class="fas fa-times"></i>
-        <img src="/nicopiercer//images/joyeria/ASTM-1.jpg">
+        <img src="/nicopiercer/images/joyeria/ASTM-1.jpg">
             <h3>Pieza ASTM-F136 de titanio</h3>
             <div class="precio">$25.000</div>
+            <div class="botones">
+                <a href="#" class="comprar">Comprar ahora</a>
+                <a href="#" class="agregar">Agregar al carrito</a>
+            </div>
+        </div>
+
+        <div class="vista_previa" data-target="producto2">
+            <i class="fas fa-times"></i>
+        <img src="/nicopiercer/images/joyeria/ASTM-3.jpg">
+            <h3>Pieza ASTM-F136 de titanio</h3>
+            <div class="precio">$30.000</div>
+            <div class="botones">
+                <a href="#" class="comprar">Comprar ahora</a>
+                <a href="#" class="agregar">Agregar al carrito</a>
+            </div>
+        </div>
+
+        <div class="vista_previa" data-target="producto3">
+            <i class="fas fa-times"></i>
+        <img src="/nicopiercer/images/joyeria/ASTM-5.jpg">
+            <h3>Pieza ASTM-F136 de titanio</h3>
+            <div class="precio">$60.000</div>
+            <div class="botones">
+                <a href="#" class="comprar">Comprar ahora</a>
+                <a href="#" class="agregar">Agregar al carrito</a>
+            </div>
+        </div>
+
+        <div class="vista_previa" data-target="producto4">
+            <i class="fas fa-times"></i>
+        <img src="/nicopiercer/images/joyeria/ASTM-7.jpg">
+            <h3>Pieza ASTM-F136 de titanio</h3>
+            <div class="precio">$70.000</div>
+            <div class="botones">
+                <a href="#" class="comprar">Comprar ahora</a>
+                <a href="#" class="agregar">Agregar al carrito</a>
+            </div>
+        </div>
+
+        <div class="vista_previa" data-target="producto5">
+            <i class="fas fa-times"></i>
+        <img src="/nicopiercer/images/joyeria/ASTM-9.jpg">
+            <h3>Pieza ASTM-F136 de titanio</h3>
+            <div class="precio">$120.000</div>
+            <div class="botones">
+                <a href="#" class="comprar">Comprar ahora</a>
+                <a href="#" class="agregar">Agregar al carrito</a>
+            </div>
+        </div>
+
+        <div class="vista_previa" data-target="producto6">
+            <i class="fas fa-times"></i>
+        <img src="/nicopiercer/images/joyeria/ASTM-11.jpg">
+            <h3>Pieza ASTM-F136 de titanio</h3>
+            <div class="precio">$130.000</div>
+            <div class="botones">
+                <a href="#" class="comprar">Comprar ahora</a>
+                <a href="#" class="agregar">Agregar al carrito</a>
+            </div>
+        </div>
+
+        <div class="vista_previa" data-target="producto7">
+            <i class="fas fa-times"></i>
+        <img src="/nicopiercer/images/joyeria/ASTM-13.jpg">
+            <h3>Pieza ASTM-F136 de titanio</h3>
+            <div class="precio">$90.000</div>
+            <div class="botones">
+                <a href="#" class="comprar">Comprar ahora</a>
+                <a href="#" class="agregar">Agregar al carrito</a>
+            </div>
+        </div>
+
+        <div class="vista_previa" data-target="producto8">
+            <i class="fas fa-times"></i>
+        <img src="/nicopiercer/images/joyeria/ASTM-15.jpg">
+            <h3>Pieza ASTM-F136 de titanio</h3>
+            <div class="precio">$150.000</div>
             <div class="botones">
                 <a href="#" class="comprar">Comprar ahora</a>
                 <a href="#" class="agregar">Agregar al carrito</a>

@@ -314,7 +314,7 @@ h3, h2{
     background: rgb(34, 17, 34);
     text-align: center;
     color: antiquewhite;
-    padding: 5rem;
+    padding: 1rem;
 }
 
 .footer .redes a{
@@ -324,7 +324,7 @@ h3, h2{
     font-size: 2rem;
     color: antiquewhite;
     border: solid rgb(137, 106, 94);
-    margin: .3rem;
+    margin: .5rem;
 }
 
 .footer .redes a:hover{
@@ -332,7 +332,7 @@ h3, h2{
 }
 
 .creditos{
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: lighter;
     padding: 1.5rem;
 }
@@ -340,6 +340,34 @@ h3, h2{
 .footer span{
     color: #932b2b;
 }
+
+.contacto_footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    border: solid rgb(137, 106, 94);
+    margin-right: 0.5rem;
+}
+
+.cajas_footer h4, p{
+    color: antiquewhite;
+    font-size: 35px;
+}
+
+.caja_imagen{
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
+    margin-left: 5rem;
+}
+
+.mapa{
+    padding: 2rem;
+    width: 450px;
+    height: 400px;
+}
+
 /* FIN de Seccion footer*/
 
 /* INICIO de estilos pagina inicio de sesión*/

@@ -25,6 +25,7 @@ if(!isset($_SESSION ['usuario'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="shortcut icon" href="/nicopiercer/images/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="/nicopiercer/css/style.css">
     <title>Nicopiercer</title>
 </head>
@@ -56,7 +57,7 @@ if(!isset($_SESSION ['usuario'])){
             <h3>Agenda tu cita personalizada</h3>
         </div>
         <div>
-            <video src="/nicopiercer/Multimedia/intro_main.mp4" autoplay width="450" height="550" controls muted></video>
+            <video src="/nicopiercer/Multimedia/intro_main.mp4" width="450" height="550" controls muted autoplay></video>
         </div>
     </section><br><br><br><br>
 
@@ -117,7 +118,7 @@ if(!isset($_SESSION ['usuario'])){
     <div class="vista_producto">
         <div class="vista_previa" data-target="producto1">
             <i class="fas fa-times"></i>
-        <img src="/nicopiercer/images/joyeria/ASTM-1.jpg">
+            <img src="/nicopiercer/images/joyeria/ASTM-1.jpg">
             <h3>Pieza ASTM-F136 de titanio</h3>
             <div class="precio">$25.000</div>
             <div class="botones">
@@ -128,7 +129,7 @@ if(!isset($_SESSION ['usuario'])){
 
         <div class="vista_previa" data-target="producto2">
             <i class="fas fa-times"></i>
-        <img src="/nicopiercer/images/joyeria/ASTM-3.jpg">
+            <img src="/nicopiercer/images/joyeria/ASTM-3.jpg">
             <h3>Pieza ASTM-F136 de titanio</h3>
             <div class="precio">$30.000</div>
             <div class="botones">
@@ -139,7 +140,7 @@ if(!isset($_SESSION ['usuario'])){
 
         <div class="vista_previa" data-target="producto3">
             <i class="fas fa-times"></i>
-        <img src="/nicopiercer/images/joyeria/ASTM-5.jpg">
+            <img src="/nicopiercer/images/joyeria/ASTM-5.jpg">
             <h3>Pieza ASTM-F136 de titanio</h3>
             <div class="precio">$60.000</div>
             <div class="botones">
@@ -150,7 +151,7 @@ if(!isset($_SESSION ['usuario'])){
 
         <div class="vista_previa" data-target="producto4">
             <i class="fas fa-times"></i>
-        <img src="/nicopiercer/images/joyeria/ASTM-7.jpg">
+            <img src="/nicopiercer/images/joyeria/ASTM-7.jpg">
             <h3>Pieza ASTM-F136 de titanio</h3>
             <div class="precio">$70.000</div>
             <div class="botones">
@@ -161,7 +162,7 @@ if(!isset($_SESSION ['usuario'])){
 
         <div class="vista_previa" data-target="producto5">
             <i class="fas fa-times"></i>
-        <img src="/nicopiercer/images/joyeria/ASTM-9.jpg">
+            <img src="/nicopiercer/images/joyeria/ASTM-9.jpg">
             <h3>Pieza ASTM-F136 de titanio</h3>
             <div class="precio">$120.000</div>
             <div class="botones">
@@ -172,7 +173,7 @@ if(!isset($_SESSION ['usuario'])){
 
         <div class="vista_previa" data-target="producto6">
             <i class="fas fa-times"></i>
-        <img src="/nicopiercer/images/joyeria/ASTM-11.jpg">
+            <img src="/nicopiercer/images/joyeria/ASTM-11.jpg">
             <h3>Pieza ASTM-F136 de titanio</h3>
             <div class="precio">$130.000</div>
             <div class="botones">
@@ -183,7 +184,7 @@ if(!isset($_SESSION ['usuario'])){
 
         <div class="vista_previa" data-target="producto7">
             <i class="fas fa-times"></i>
-        <img src="/nicopiercer/images/joyeria/ASTM-13.jpg">
+            <img src="/nicopiercer/images/joyeria/ASTM-13.jpg">
             <h3>Pieza ASTM-F136 de titanio</h3>
             <div class="precio">$90.000</div>
             <div class="botones">
@@ -194,7 +195,7 @@ if(!isset($_SESSION ['usuario'])){
 
         <div class="vista_previa" data-target="producto8">
             <i class="fas fa-times"></i>
-        <img src="/nicopiercer/images/joyeria/ASTM-15.jpg">
+            <img src="/nicopiercer/images/joyeria/ASTM-15.jpg">
             <h3>Pieza ASTM-F136 de titanio</h3>
             <div class="precio">$150.000</div>
             <div class="botones">
@@ -277,20 +278,55 @@ if(!isset($_SESSION ['usuario'])){
             <div class="columna_derecha">
                 <h1 class="titulo_info">Nuestro servicio</h1>
                 <article>
-                    <p>En nuestro estudio de perforaciones, nos comprometemos a brindar un servicio seguro y profesional. Todos nuestros procedimientos son realizados con equipo esterilizado y materiales de la más alta calidad. Seguimos estrictas normas de higiene y seguridad para garantizar que cada perforación sea no solo una experiencia estética, sino también segura para tu salud. Nuestro equipo está altamente capacitado y utiliza técnicas de perforación modernas para asegurar resultados precisos y cómodos. Tu bienestar es nuestra prioridad, por lo que puedes confiar en que recibirás un servicio que cumple con los más altos estándares de calidad y seguridad.</p>
+                    <p>En nuestro estudio de perforaciones, nos comprometemos a brindar un servicio seguro y
+                        profesional. Todos nuestros procedimientos son realizados con equipo esterilizado y materiales
+                        de la más alta calidad. Seguimos estrictas normas de higiene y seguridad para garantizar que
+                        cada perforación sea no solo una experiencia estética, sino también segura para tu salud.
+                        Nuestro equipo está altamente capacitado y utiliza técnicas de perforación modernas para
+                        asegurar resultados precisos y cómodos. Tu bienestar es nuestra prioridad, por lo que puedes
+                        confiar en que recibirás un servicio que cumple con los más altos estándares de calidad y
+                        seguridad.</p>
                 </article>
             </div>
         </div>
-    </section><br><br><br>
+    </section>
 
-    <section class="footer">
+    <section>
+        <div class="contacto_footer">
+            <div class="caja_imagen">
+                <div>
+                    <img src="/nicopiercer/images/logo.jpg">
+                    <img src="/nicopiercer/images/logo2.jpg">
+                    <img src="/nicopiercer/images/logo3.jpg">
+                </div>
+            </div>
+            <div class="cajas_footer">
+                <h4>Contactanos</h4>
+                <p>
+                    Carrera 7 # 45-10 La javeriana.<br>
+                    Bogotá Colombia.<br>
+                    Nicolas.fajardo@gmail.com<br>
+                    +57 320 2084032<br>
+                </p>
+            </div>
+            <div class="cajas_footer">
+                <iframe class="mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d295.57666015043543!2d-74.06398111644987!3d4.631579781442376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sco!4v1724817515964!5m2!1sen!2sco"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Visita nuestras redes.</p>
         <div class="redes">
             <a href="https://web.facebook.com/Mickey.EP" class="fab fa-facebook" target="_blank"></a>
             <a href="https://www.instagram.com/nicopiercer__/" class="fab fa-instagram" target="_blank"></a>
             <a href="https://www.tiktok.com/@nicopiercer" class="fab fa-tiktok" target="_blank"></a>
         </div>
-        <div class="creditos">Creado por <span>Brayan Ramirez</span> | Todos los derechos reservados.</div>
-    </section>
+        <div class="creditos">Creado por <span>Brayan Ramirez</span> 2024 | Todos los derechos reservados.</div>
+    </footer>
+
 </body>
 
 </html>

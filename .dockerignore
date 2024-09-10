@@ -1,0 +1,9 @@
+fly.toml
+[http_service]
+force_https = true
+[http_service.concurrency]
+soft_limit = 25
+hard_limit = 50
+[[statics]]
+guest_path = "/app/public"
+url_prefix = "/"

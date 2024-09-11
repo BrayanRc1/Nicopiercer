@@ -206,6 +206,45 @@ if(!isset($_SESSION ['usuario'])){
     </div>
     <script src="/nicopiercer/js/productos.js"></script>
 
+<!-- Inicio de seccion de perfil -->
+
+<?php 
+    include("../php/conexion_be.php");
+    include("../php/perfil.php");
+    include("../php/imagen_perfil.php");
+?>
+
+<?php 
+$busqueda = mysqli_query($conexion, "SELECT* FROM usuarios");
+?>
+    <div class="perfil">
+        <div class="vista_perfil">
+            <i class="fas fa-times"></i>
+            <p>Perfil usuario</p><br>
+            <?php if(isset($resultado)){ ?>
+                <p>Usuario: <?php echo htmlspecialchars($resultado['name']); ?></p>
+                <p>Email: <?php echo htmlspecialchars($resultado['email']); ?></p><br>
+            <?php } else { ?>
+                <p>No se encontraron datos del usuario.</p>
+            <?php } ?>
+            <?php if(isset($resultado['foto_perfil'])){
+            echo "<img src='".$resultado['foto_perfil']."' alt='Foto de perfil' style='width: 150px; height: 150px;'>";
+            } else {
+            echo "<img src='/nicopiercer/images/imagen_usuario.jpg' alt='Foto de perfil predeterminada' style='width: 150px; height: 150px;'>";
+            }
+            ?>
+            <br>
+            <form action="subir_foto.php" method="POST" enctype="multipart/form-data"><br>
+                <label for="foto">Foto de perfil:</label>
+                <input type="file" name="foto" id="foto" accept="image/*">
+                <input type="submit" value="Subir Foto"><br><br>
+                <a href="#" class="comprar">Eliminar Cuenta</a>
+            </form>
+        </div>
+    </div>
+    <script src="/nicopiercer/js/perfil.js"></script>
+<!-- Fin de seccion de perfil -->
+
     <section class="portafolio">
         <h1 class="titulo_procedimientos" id="portafolio">Portafolio y procedimientos</h1>
         <div class="contenedor_portafolio">

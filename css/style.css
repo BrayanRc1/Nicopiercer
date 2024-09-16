@@ -32,6 +32,37 @@ h3, h2{
     color: antiquewhite;
 }
 
+/* INICIO de Seccion calendario*/
+.calendario {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 450px;
+    padding: 35px;
+    background: rgb(34, 17, 34);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1000;
+    border-radius: 10px;
+    border: solid #aa7575;
+}
+
+.vista_calendario {
+    text-align: center;
+}
+
+.vista_calendario .fa-times {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #891b1b;
+}
+/* FIN de Seccion calendario*/
+
 .header{
     display: flex;
     align-items: center;
@@ -72,6 +103,7 @@ h3, h2{
 .inicio{
     min-height: 40vh;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     background:url(/nicopiercer/images/imagen_principal2.jpg) no-repeat;
     background-size: cover;
@@ -92,9 +124,10 @@ h3, h2{
 
 .procedimientos .contenedor_principal{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+    gap: 2rem;
 }
+
 
 .procedimientos .contenedor_principal .caja{
     margin-top: 1rem;
@@ -157,7 +190,7 @@ h3, h2{
 /* INICIO de Seccion portafolio y procedimientos*/
 .portafolio .contenedor_portafolio{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
     gap: 2rem;
 }
 
@@ -278,14 +311,16 @@ form{
 /*FIN vistas preliminares de productos*/
 
 
-/*INICIO de Seccion blog*/
+/*INICIO de Seccion blog y comentarios*/
 .imagen_blog .contenedor_blog{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+    gap: 2rem;
 }
 
 .imagen_blog .contenedor_blog .caja_blog{
+    width: 100%;
+    height: 100%;
     margin-top: 1rem;
     margin-right: 0.5rem;
     padding: 1rem;
@@ -312,13 +347,13 @@ form{
 .imagen_blog4:hover{
     content: url(/nicopiercer/images/reseñas/reseña7.png);
 }
-/*FIN de blog*/
+/*FIN de blog y comentarios*/
 
 
 /*INICIO de seccion información*/
 .contenedor_info {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit minmax(45rem, 1fr));
     gap: 1rem;
     align-items: start;
     border: solid rgb(137, 106, 94);
@@ -343,6 +378,23 @@ form{
     font-size: 40px;
 }
 /*FIN de seccion información*/
+
+/* INICIO de estilos seccion informacion*/
+.contenedor_info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+    gap: 2rem;
+}
+
+.contenedor_info{
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    border: solid rgb(137, 106, 94);
+}
+
+/* FIN de estilos seccion informacion*/
 
 
 /* INICIO de Seccion footer*/
@@ -393,15 +445,28 @@ form{
 
 .caja_imagen{
     display: flex;
-    flex-wrap: wrap;
-    width: 450px;
+    width: 400px;
     margin-left: 5rem;
 }
 
 .mapa{
     padding: 2rem;
-    width: 450px;
+    width: 400px;
     height: 400px;
+}
+
+.contacto_footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.contacto_footer{
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    border: solid rgb(137, 106, 94);
 }
 
 /* FIN de Seccion footer*/
@@ -428,3 +493,5 @@ form{
     font-size: 16px;
     text-align: center;
 }
+
+/* FIN de estilos pagina inicio de sesión*/

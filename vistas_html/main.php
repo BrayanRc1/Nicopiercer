@@ -31,6 +31,7 @@ if(!isset($_SESSION ['usuario'])){
 </head>
 
 <body>
+<!-- INICIO de seccion de navbar -->
     <header class="header">
         <a href="#" class="logo">
             <img src="/nicopiercer/images/logo.jpg">
@@ -42,16 +43,32 @@ if(!isset($_SESSION ['usuario'])){
             <a href="#informacion">Información</a>
         </nav>
         <div class="iconos">
-            <a href="">
-                <div class="fas fa-user" id="usuario"></div>
-            </a>
-            <div class="fas fa-calendar" id="citas"></div>
+            <div class="fas fa-user" id="usuario"></div>
+            <div class="fas fa-calendar" id="calendario"></div>
             <a href="/nicopiercer/php/cerrar_sesion.php">
                 <div class="fa-solid fa-right-from-bracket"></div>
             </a>
         </div>
     </header>
+<!-- FIN de seccion de navbar -->
 
+<!-- INICIO de seccion de calendario -->
+<div class="calendario">
+    <div class="vista_calendario">
+        <i class="fas fa-times"></i>
+        <p>Agendamiento citas</p><br>
+        <p>Selecciona la fecha para programar con el profesional</p><br>
+        <form action="subir_foto.php" method="POST" enctype="multipart/form-data"><br>
+                <input type="date" id="fecha"><br><br>
+                <input type="submit" value="Agendar cita"><br><br>
+                <input type="submit" value="Eliminar cita"><br><br>
+            </form>
+    </div>
+</div>
+<script src="/nicopiercer/js/calendario.js"></script>
+<!-- FIN de seccion de calendario -->
+
+<!-- INICIO de seccion de vista principal -->
     <section class="inicio" id="inicio">
         <div class="contenido">
             <h3>Agenda tu cita personalizada</h3>
@@ -60,6 +77,9 @@ if(!isset($_SESSION ['usuario'])){
             <video src="/nicopiercer/Multimedia/intro_main.mp4" width="450" height="550" controls muted autoplay></video>
         </div>
     </section><br><br><br><br>
+<!-- FIN de seccion de vista principal -->
+
+<!-- INICIO de seccion de joyeria -->
 
     <section class="procedimientos">
         <h1 class="titulo_procedimientos" id="productos">Nuestras joyas</h1>
@@ -205,8 +225,9 @@ if(!isset($_SESSION ['usuario'])){
         </div>
     </div>
     <script src="/nicopiercer/js/productos.js"></script>
+<!-- FIN de seccion de joyeria -->
 
-<!-- Inicio de seccion de perfil -->
+<!-- INICIO de seccion de perfil -->
 
 <?php 
     include("../php/conexion_be.php");
@@ -243,8 +264,9 @@ $busqueda = mysqli_query($conexion, "SELECT* FROM usuarios");
         </div>
     </div>
     <script src="/nicopiercer/js/perfil.js"></script>
-<!-- Fin de seccion de perfil -->
+<!-- FIN de seccion de perfil -->
 
+<!-- INICIO de seccion de Portafolio y procedimientos -->
     <section class="portafolio">
         <h1 class="titulo_procedimientos" id="portafolio">Portafolio y procedimientos</h1>
         <div class="contenedor_portafolio">
@@ -288,7 +310,9 @@ $busqueda = mysqli_query($conexion, "SELECT* FROM usuarios");
         </div>
         <script src="/nicopiercer/js/video.js"></script>
     </section><br><br><br><br>
+<!-- FIN de seccion de Portafolio y procedimientos -->
 
+<!-- INICIO de seccion de Blogs y comentarios -->
     <section class="imagen_blog">
         <h1 class="titulo_procedimientos" id="blogs">Blogs y comentarios</h1>
         <div class="contenedor_blog">
@@ -306,13 +330,15 @@ $busqueda = mysqli_query($conexion, "SELECT* FROM usuarios");
             </div>
         </div>
     </section><br><br><br><br>
+<!-- FIN de seccion de Blogs y comentarios -->
 
-    <section class="">
+<!-- INICIO de seccion de Información -->
+    <section class="informacion">
         <h1 id="informacion">Información</h1>
         <div class="contenedor_info">
             <div class="columna_izquierda">
                 <h2 class="h2_info">Antes de cada sesión</h2>
-                <video src="/nicopiercer/Multimedia/Intro_nicopiercer.mp4" width="400" height="400" muted controls autoplay></video>
+                <video src="/nicopiercer/Multimedia/Intro_nicopiercer.mp4" width="500" height="500" muted controls autoplay></video>
             </div>
             <div class="columna_derecha">
                 <h1 class="titulo_info">Nuestro servicio</h1>
@@ -365,7 +391,7 @@ $busqueda = mysqli_query($conexion, "SELECT* FROM usuarios");
         </div>
         <div class="creditos">Creado por <span>Brayan Ramirez</span> 2024 | Todos los derechos reservados.</div>
     </footer>
-
+<!-- FIN de seccion de Información -->
 </body>
 
 </html>
